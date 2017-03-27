@@ -1,6 +1,18 @@
 <!doctype html>
 <html class="no-js">
 <head>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA_fLrbFebaZKoH-uniLhZPmOLXLNB6TXQ",
+            authDomain: "omega-8b604.firebaseapp.com",
+            databaseURL: "https://omega-8b604.firebaseio.com",
+            storageBucket: "omega-8b604.appspot.com",
+            messagingSenderId: "139543227260"
+        };
+        firebase.initializeApp(config);
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>omega</title>
@@ -61,6 +73,7 @@
     <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -87,6 +100,13 @@
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/demo/demo-dialog.controller.js"></script>
+    <script src="app/entities/demo/demo.single.js"></script>
+    <script src="app/entities/demo/demo-detail.controller.js"></script>
+    <script src="app/entities/demo/demo-delete-dialog.controller.js"></script>
+    <script src="app/entities/demo/demo.state.js"></script>
+    <script src="app/entities/demo/demo.service.js"></script>
+    <script src="app/entities/demo/demo.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
